@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  margin: 0;
   /* line-height: 1.5; */
   color: rgb(73, 72, 72);
   font-size: 1.6em; /* 16px */
@@ -22,8 +23,11 @@ body {
   "Hiragino Sans",
   Meiryo,
   sans-serif;
-  background: #EEEEEE;
+  /* background: #EEEEEE; */
   overflow: hidden;
+  background-image: url(../img/anhnen.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 /*******************************************************/
 /* ヘッダー                                             */
@@ -63,9 +67,10 @@ input[type=number] {
   width: 3em;
   line-height: 1.5em;
   font-size: 2em;
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
   border: solid 0.01em grey;
+  border-radius: 0.5rem;
 }
 
 #calcType  {
@@ -79,7 +84,7 @@ input[type=number] {
   border: solid 0.01em grey;
 }
 
-#btnEqual {
+/* #btnEqual {
   margin: 0.05em;
   padding: 0;
   width: 2em;
@@ -87,7 +92,7 @@ input[type=number] {
   font-size: 2em;
   text-align: center;
   vertical-align: middle;
-}
+} */
 /* 「＝」をボタンにする */
  #btnEqual {
   margin: 0.05em;
@@ -96,7 +101,7 @@ input[type=number] {
   line-height: 1.5em;
   font-size: 2em;
   color: whitesmoke;
-  border-radius: 0.3em;
+  border-radius: 0.5em;
   background: rgb(26, 212, 212);
   text-align: center;
   vertical-align: middle;
@@ -107,6 +112,7 @@ input[type=number] {
   transform: translateY(4px);
 } 
 
+
 #result  {
   margin: 0.05em;
   padding: 0;
@@ -115,13 +121,16 @@ input[type=number] {
   font-size: 2em;
   text-align: left;
   vertical-align: middle;
+  /*background: rgb(120,145,129);*/
+  color:white;
 }
 /*back butoon:*/
 .back{
   text-align: left;
 }
-#btn99{
-  padding: 0.6rem;
+#btn99  {
+ 
+  padding: 1rem;
   border-radius: 0.3rem;
   color: whitesmoke;
   font-size: 1.5rem;
